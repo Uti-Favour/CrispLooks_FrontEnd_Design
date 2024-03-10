@@ -12,16 +12,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-
+<body class="">
     <!-- ------ Hero Section ------ -->
-    <section class="">
-        <div class="">
-            <input type="search" class="">
-            <button class=""></button>
-            <h1 class="">Hello</h1>
-            <p class=""></p>
-            <button class=""></button>
+    <section class=" bg-[url('Images/laundry-5.jpg')] h-screen text-white bg-cover grayscale">
+        <div class="justify-center flex">
+            <div class="mt-20">
+                <input type="search" placeholder="Search different style of cloths!" class=" rounded-full py-2 lg:px-96 px-4 text-black ">
+                <button class="bg-black text-white rounded-full py-2 px-8">Search</button>
+            </div>
+            
+            <div class="flex justify-center items-center absolute top-80 lg:mt-0 ml-5">
+                <div class="relative justify-center">
+                    <h1 class="lg:text-8xl text-5xl shadow-none font-bold">Crisp Looks Collections</h1>
+                    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit.</p>
+                    <button class="px-14 py-2 rounded-2xl bg-black text-white mt-5">Explore More <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -43,17 +50,17 @@
         </div>
 
         <!-- ------ Image Listing ------ -->
-        <div class="">
-            <div class="">
-                <img src="" alt="">
+        <div class="grid grid-cols-2">
+            <div class="w-72">
+                <img src="Images/laundry-5.jpg" alt="">
             </div>
 
-            <div class="">
-                <img src="" alt="">
+            <div class="w-72">
+                <img src="Images/pexels-cottonbro-studio-4709285.jpg" alt="">
             </div>
 
-            <div class="">
-                <img src="" alt="">
+            <div class="w-72">
+                <img src="Images/pexels-tony-schnagl-5588479.jpg" alt="">
             </div>
         </div>
 
@@ -61,47 +68,82 @@
     </section>
 
     <!-- ------ Cloth Items ------ -->
-    <section class="">
-        <div class="">
-            <img src="" alt="">
-        </div>
 
-        <div class="">
-            <img src="" alt="">
+    <section class="relative">
+        <div class="grid lg:grid-cols-3 gap-5 lg:mx-10 mx-5 mt-20 ">
+            <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
+            <div class="rounded-lg lg:rounded-2xl">
+                <img src="Images/laundry-5.jpg" loading="lazy" class=" rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-2xl">JACKET <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">URBAN JACKET</h2>
+                <p class="text-gray-500 mb-5">VINTAGE GREEN JACKET</p>
+                <span  class="font-bold">$50.00</span>
+    
+            </div>
+    
+            <div class="lg:mt-0 mt-10">
+                <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg lg:rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">GLASSES <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">RETRO GLASSES</h2>
+                <p class="text-gray-500 mb-5">GREY RETRO GLASSES</p>
+                <span>$52.99</span>
+    
+            </div>
+    
+            <div class="lg:mt-0 mt-10">
+                <img src="Images/pexels-tony-schnagl-5588479.jpg" class="rounded-lg lg:rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">PANTS <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
+                <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
+                <span>$99.99</span>
+    
+            </div>
+    
+            <div class="lg:mt-0 mt-10">
+                <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg  lg:rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">JACKET <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">NXT SPRTWEAR WINDRUNNER</h2>
+                <p class="text-gray-500 mb-5">MEN'S FULL ZIP HODDIE</p>
+                <span>$1009.99</span>
+    
+            </div>
+    
+            <div class="lg:mt-0 mt-10">
+                <img src="Images/pexels-tony-schnagl-5588479.jpg" class="rounded-lg  lg:rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">HAND BAG <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">BROWN MODERN BAG</h2>
+                <p class="text-gray-500 mb-5">MODERN LEATHER BAG FOR WOMEN</p>
+                <span>$255.99</span>
+    
+            </div>
+    
+            <div class="lg:mt-0 mt-10">
+                <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg lg:rounded-xl">
+                <button class="rounded-full hover:bg-black text-black hover:text-white px-10 lg:px-16 py-1 lg:py-2 mt-5 border border-black shadow-xl">T-SHIRT <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <h2 class="font-bold mt-2">RELAXED FIT T-SHIRT</h2>
+                <p class="text-gray-500 mb-5">OGANIC COTTON JERSEY</p>
+                <span>$1.035.99</span>
+    
+            </div>
         </div>
-
-        <div class="">
-            <img src="" alt="">
-        </div>
-
-        <div class="">
-            <img src="" alt="">
-        </div>
-
-        <div class="">
-            <img src="" alt="">
-        </div>
-
-        <div class="">
-            <img src="" alt="">
-        </div>
+       
 
     </section>
 
     <!-- ------ Unleash your fashion ------ -->
-    <section class="">
+    <section class="mt-40">
         <div class="">
-            <h1 class=""></h1>
-            <button class=""></button>
+            <h1 class="bold text-5xl ml-10 font-bold mb-5">UNLEASH YOUR FASHION FANTASY</h1>
+            <button class="bg-black rounded-full ml-10 text-white px-16 py-3 mb-10">Explore More <i class="fas fa-arrow-right"></i> </button>
         </div>
 
-        <div class="">
+        <div class="grid grid-cols-2 mx-10 gap-5">
             <div class="">
-                <img src="" alt="">
+                <img src="Images/pexels-tony-schnagl-5588479.jpg" class=" rounded-2xl">
             </div>
 
             <div class="">
-                <img src="" alt="">
+                <img src="Images/pexels-cottonbro-studio-4709285.jpg" class=" rounded-2xl">
             </div>
 
         </div>
@@ -123,12 +165,17 @@
     </section>
 
     <!-- ------ Crisp Look Newsleter ------ -->
-    <section class="">
-        <div class="">
-            <h1 class=""></h1>
-            <input type="search">
-            <button class=""></button>
+    <section class=" ">
+
+        <div class="flex justify-center items-center">
+            <div class="">
+                <h1 class="text-5xl  ">Subscribe For Our Exclusive Fahion Insight</h1>
+                <input type="search" class="e-96 border-gray-950">
+                <button class="bg-black px-12 py-2 text-white">Subscribe</button>
+            </div>
+
         </div>
+       
 
 
     </section>
@@ -137,10 +184,10 @@
     <section class="">
         <div class="">
             <ul class="">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Cloths</li>
+                <li>See more</li>
                 <li></li>
             </ul>
 
@@ -178,6 +225,7 @@
         </div>
 
     </section>
+
 
     <script src="JS/main.js"></script>
 </body>
