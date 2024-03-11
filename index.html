@@ -14,7 +14,7 @@
 
 <body class="">
     <!-- ------ Hero Section ------ -->
-    <section class=" bg-[url('Images/laundry-5.jpg')] h-screen text-white bg-cover grayscale">
+    <section class=" bg-[url('Images/laundry-5.jpg')] h-screen text-white bg-cover grayscale hidden">
         <div class="justify-center flex">
             <div class="mt-20">
                 <input type="search" placeholder="Search different style of cloths!"
@@ -36,8 +36,9 @@
 
     <!-- ------ Categories Section ------ -->
     <section class="">
-        <div class="">
-            <h1 class=""></h1>
+        <div class="ml-10">
+            <h1 class="font-bold text-3xl lg:text-5xl max-w-xl lg:leading-tight leading-10 mb-10">FASHION FOWARD STYLE
+                ETERNAL <i class="fa-solid fa-cart-shopping"></i></h1>
 
             <!-- ------ Sponsors ------- -->
             <div class="">
@@ -66,12 +67,6 @@
                     src="Images/pexels-cottonbro-studio-4709285.jpg" alt="Image 2">
                 <img class="rounded-xl lg:rounded-2xl shadow-md object-cover w-full h-1/2 mt-4"
                     src="Images/pexels-tony-schnagl-5588479.jpg" alt="Image 3">
-                <div class="absolute bottom-2 right-2 bg-black text-white px-2 py-1 rounded-full z-index-10">
-                    <span>Text Content for Image 2</span>
-                </div>
-                <div class="absolute bottom-2 left-2 bg-black text-white px-2 py-1 rounded-full z-index-20">
-                    <span>Text Content for Image 3</span>
-                </div>
             </div>
         </div>
 
@@ -98,10 +93,10 @@
                 <img src="Images/laundry-5.jpg" loading="lazy" class=" rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-2xl">JACKET
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">URBAN JACKET</h2>
                 <p class="text-gray-500 mb-5">VINTAGE GREEN JACKET</p>
-                <span class="font-bold">$50.00</span>
+                <span>$50.00</span>
 
             </div>
 
@@ -109,7 +104,7 @@
                 <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg lg:rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">GLASSES
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">RETRO GLASSES</h2>
                 <p class="text-gray-500 mb-5">GREY RETRO GLASSES</p>
                 <span>$52.99</span>
@@ -120,7 +115,7 @@
                 <img src="Images/pexels-tony-schnagl-5588479.jpg" class="rounded-lg lg:rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">PANTS
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
                 <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
                 <span>$99.99</span>
@@ -131,7 +126,7 @@
                 <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg  lg:rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">JACKET
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">NXT SPRTWEAR WINDRUNNER</h2>
                 <p class="text-gray-500 mb-5">MEN'S FULL ZIP HODDIE</p>
                 <span>$1009.99</span>
@@ -142,7 +137,7 @@
                 <img src="Images/pexels-tony-schnagl-5588479.jpg" class="rounded-lg  lg:rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-16 py-2 mt-5 border border-black shadow-xl">HAND
-                    BAG <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    BAG <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">BROWN MODERN BAG</h2>
                 <p class="text-gray-500 mb-5">MODERN LEATHER BAG FOR WOMEN</p>
                 <span>$255.99</span>
@@ -153,7 +148,7 @@
                 <img src="Images/pexels-cottonbro-studio-4709285.jpg" class="rounded-lg lg:rounded-xl">
                 <button
                     class="rounded-full hover:bg-black text-black hover:text-white px-10 lg:px-16 py-1 lg:py-2 mt-5 border border-black shadow-xl">T-SHIRT
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <i class="fa-solid fa-cart-shopping"></i></button>
                 <h2 class="font-bold mt-2">RELAXED FIT T-SHIRT</h2>
                 <p class="text-gray-500 mb-5">OGANIC COTTON JERSEY</p>
                 <span>$1.035.99</span>
@@ -283,18 +278,6 @@
         </div>
 
     </section>
-
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="col-span-1 md:col-span-2 relative">
-            <img class="rounded shadow-md object-cover h-full" src="Images/laundry-5.jpg" alt="Image 1">
-            <div class="absolute bottom-0 right-0 bg-black text-white">
-                <span>Cloth Name</span>
-                <br>
-                <span>$ Price</span>
-            </div>
-        </div>
-    </div>
 
 
     <script src="JS/main.js"></script>
