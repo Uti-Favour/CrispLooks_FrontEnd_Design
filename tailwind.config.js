@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
-  theme: {
-    extend: {},
-  },
   plugins: [],
+
+  theme: {
+    fontFamily: {
+      brandFont: ["'YourFontName', sans-serif"],
+    },
+    // ... other Tailwind configurations
+  }
 }
 
