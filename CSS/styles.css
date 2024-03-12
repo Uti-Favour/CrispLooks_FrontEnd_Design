@@ -5,6 +5,13 @@
     font-family: "Raleway", sans-serif;
 }
 
+.nav_hidden{
+    display: none;
+}
+
+.nav_display{
+    display: block;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
 
