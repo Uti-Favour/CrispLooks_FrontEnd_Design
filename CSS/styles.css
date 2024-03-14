@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    
 }
+
 
 .nav_hidden{
     display: none;
