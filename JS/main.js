@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navBar = document.getElementById("navBar");
-  let nav_hidden = document.querySelector(".nav_hidden");
   const items = document.getElementById("items");
 
+  //navBar functionality
+  let nav_hidden = document.querySelector(".nav_hidden");
   navBar.addEventListener("click", () => {
     nav_hidden.classList.toggle("nav_display");
     nav_hidden.classList.toggle("nav_hidden");
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$11,000",
     },
 
 
@@ -29,60 +30,60 @@ document.addEventListener("DOMContentLoaded", () => {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$12,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$13,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$14,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$15,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$16,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$17,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$18,000",
     },
 
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
       description: "VINTAGE ANKARA STYLES",
-      price: "$10,000",
+      price: "$19,000",
     },
 
     
   ];
 
-  console.log(orderList.description(1));
+
 });
