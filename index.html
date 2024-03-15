@@ -1,384 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="relative">
+  <body class="relative scroll-smooth">
     <!-- Background -->
     <div
-        class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-    </div>
+      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
+    ></div>
 
     <!-- ------ Hero Section ------ -->
     <div
-        class="hero min-h-screen bg-cover bg-center lg:bg-[url('Images/background-1.jpg')] bg-[url('Images/background-2.jpg')]">
+      class="hero min-h-screen bg-cover bg-center lg:bg-[url('Images/background-1.jpg')] bg-[url('Images/background-2.jpg')]"
+    >
+      <nav class="lg:block hidden">
+        <div class="flex justify-between bg-white w-full py-3">
+          <div class="ml-20">
+            <img src="Images/Orange_logo.webp" class="w-40" />
+          </div>
 
-        <nav class="lg:block hidden">
-            <div class="flex justify-between bg-white w-full py-3">
-                <div class="ml-20">
-                    <img src="Images/Orange_logo.webp" class="w-40">
-                </div>
+          <div class="flex justify-center">
+            <ul class="flex space-x-4 mt-5 font-bold">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="shop.html">Shops</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="guides.html">Size Guide</a></li>
+              <li><a href="press.html">Press</a></li>
+            </ul>
+          </div>
 
-                <div class="flex justify-center">
-                    <ul class="flex space-x-4 mt-5 font-bold">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="collections.html">Collections</a></li>
-                        <li><a href="shop.html">Shops</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="guides.html">Size Guide</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-
-                <div class="mr-20 space-x-5 mt-5">
-                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                    <i class="fa-solid fa-user text-xl"></i>
-                    <i class="fa-solid fa-cart-shopping text-xl"></i>
-
-                </div>
-            </div>
-        </nav>
-
-        <!-- ------ Responsive Layout ------ -->
-        <nav class="lg:hidden block">
-            <div class="flex justify-between items-center bg-white py-5 px-4">
-                <button id="navBar" type="button">
-                    <i class="fa-solid fa-bars text-xl mr-4"></i>
-                </button>
-
-                <img src="Images/Orange_logo.webp" class="w-auto h-auto max-h-10">
-
-                <div class="flex space-x-5">
-                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                    <i class="fa-solid fa-cart-shopping text-xl"></i>
-                </div>
-            </div>
-            <div class="bg-white">
-                <ul class="ml-5  nav_hidden h-[50vh]">
-                    <li class="mb-3"><a href="index.html">Home</a></li>
-                    <li class="mb-3"><a href="collections.html">Collections</a></li>
-                    <li class="mb-3"><a href="shop.html">Shops</a></li>
-                    <li class="mb-3"><a href="faq.html">FAQs</a></li>
-                    <li class="mb-3"><a href="contact.html">Contact Us</a></li>
-                    <li class="mb-3"><a href="about.html">About</a></li>
-                    <li class="mb-3"><a href="guides.html">Size Guide</a></li>
-                    <li class="mb-5"><a href="press.html">Press</a></li>
-                </ul>
-            </div>
-
-        </nav>
-
-
-        <!-- ------ Hero Section ------ -->
-        <div class="container mx-auto px-4 py-24 flex flex-col items-center h-full">
-            <div class="text-center lg:mt-52 mt-36">
-                <p class="text-xl text-white mb-4">Welcome to</p>
-                <h2 class="lg:text-4xl text-3xl lg:font-bold font-semibold text-white">Crisp Looks / IG ZUKS</h2>
-            </div>
-            <button class="px-4 py-2 border text-white font-bold rounded-md mx-auto mt-10">Shop Now</button>
+          <div class="mr-20 space-x-5 mt-5">
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <i class="fa-solid fa-user text-xl"></i>
+            <i class="fa-solid fa-cart-shopping text-xl"></i>
+          </div>
         </div>
+      </nav>
+
+      <!-- ------ Responsive Layout ------ -->
+      <nav class="lg:hidden block">
+        <div class="flex justify-between items-center bg-white py-5 px-4">
+          <button id="navBar" type="button">
+            <i class="fa-solid fa-bars text-xl mr-4"></i>
+          </button>
+
+          <img src="Images/Orange_logo.webp" class="w-auto h-auto max-h-10" />
+
+          <div class="flex space-x-5">
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <i class="fa-solid fa-cart-shopping text-xl"></i>
+          </div>
+        </div>
+        <div class="bg-white">
+          <ul class="ml-5 nav_hidden h-[50vh]">
+            <li class="mb-3"><a href="index.html">Home</a></li>
+            <li class="mb-3"><a href="collections.html">Collections</a></li>
+            <li class="mb-3"><a href="shop.html">Shops</a></li>
+            <li class="mb-3"><a href="faq.html">FAQs</a></li>
+            <li class="mb-3"><a href="contact.html">Contact Us</a></li>
+            <li class="mb-3"><a href="about.html">About</a></li>
+            <li class="mb-3"><a href="guides.html">Size Guide</a></li>
+            <li class="mb-5"><a href="press.html">Press</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ------ Hero Section ------ -->
+      <div
+        class="container mx-auto px-4 py-24 flex flex-col items-center h-full"
+      >
+        <div class="text-center lg:mt-52 mt-36">
+          <p class="text-xl text-white mb-4">Welcome to</p>
+          <h2
+            class="lg:text-4xl text-3xl lg:font-bold font-semibold text-white"
+          >
+            Crisp Looks / IG ZUKS
+          </h2>
+        </div>
+        <button
+          class="px-4 py-2 border text-white hover:bg-black font-bold rounded-md mx-auto mt-10"
+        >
+          <a href="#categories">Shop Now</a>
+        </button>
+      </div>
     </div>
-
-
 
     <!-- ------ Categories Section ------ -->
     <section class="mt-14 relative">
-        <!-- Background -->
-        <div
-            class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+      ></div>
+
+      <div class="flex justify-center lg:mt-24 mt-10">
+        <h1
+          class="font-semibold text-2xl lg:text-5xl max-w-xl lg:leading-tight leading-10 mb-10"
+        >
+          Shop by Categoies
+        </h1>
+
+        <!-- ------ Sponsors ------- -->
+        <div class="">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
         </div>
+      </div>
 
-        <div class="flex justify-center lg:mt-24 mt-10">
-            <h1 class="font-semibold text-2xl lg:text-5xl max-w-xl lg:leading-tight leading-10 mb-10"> Shop by Categoies
-            </h1>
-
-            <!-- ------ Sponsors ------- -->
-            <div class="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-
+      <!-- ------ Image Listing ------ -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-5 lg:mx-10 lg:mt-10">
+        <div class="col-span-1 md:col-span-2 relative">
+          <img
+            class="shadow-md object-cover h-full rounded-xl lg:rounded-2xl"
+            src="Images/collection-9.jpg"
+            alt="Image 1"
+          />
+          <div
+            class="absolute bottom-10 lg:bottom-48 right-10 lg:right-32 bg-white text-black lg:font-semibold py-5 px-5 rounded-full"
+          >
+            <span
+              class="flex items-center justify-center lg:h-24 h-14 lg:w-24 w-14 rounded-full bg-white text-center lg:text-2xl"
+            >
+              See More
+            </span>
+          </div>
         </div>
-
-        <!-- ------ Image Listing ------ -->
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-5 lg:mx-10 lg:mt-10">
-            <div class="col-span-1 md:col-span-2 relative">
-                <img class="shadow-md object-cover h-full rounded-xl lg:rounded-2xl" src="Images/collection-9.jpg"
-                    alt="Image 1">
-                <div
-                    class="absolute bottom-10 lg:bottom-48 right-10 lg:right-32 bg-white text-black lg:font-semibold py-5 px-5 rounded-full">
-                    <span
-                        class="flex items-center justify-center lg:h-24 h-14 lg:w-24 w-14 rounded-full bg-white text-center lg:text-2xl">
-                        See More
-
-                    </span>
-                </div>
-
-
+        <div class="col-span-1 flex flex-col justify-between relative">
+          <img
+            class="shadow-md object-cover w-full h-1/2 rounded-xl lg:rounded-2xl"
+            src="Images/collection-11.jpg"
+            alt="Image 2"
+          />
+          <div
+            class="absolute lg:top-[416px] top-28 right-0 bg-white text-black rounded-br-lg lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm"
+          >
+            <div>
+              <span class="font-semibold lg:font-bold text-black"
+                >URBAN SNEAKERS 2024 <i class="fas fa-arrow-right ml-5"></i
+              ></span>
             </div>
-            <div class="col-span-1 flex flex-col justify-between relative ">
-                <img class="shadow-md object-cover w-full h-1/2 rounded-xl lg:rounded-2xl"
-                    src="Images/collection-11.jpg" alt="Image 2">
-                <div
-                    class="absolute lg:top-[416px] top-28 right-0 bg-white text-black rounded-br-lg lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm">
-                    <div>
-                        <span class="font-semibold lg:font-bold text-black">URBAN SNEAKERS 2024 <i
-                                class="fas fa-arrow-right ml-5"></i></span>
-                    </div>
-                    <div class="mt-5 lg:block hidden">
-                        <span class="py-2  text-gray-700 rounded-2xl mt-5">$10,000</span>
-                    </div>
-
-                </div>
-                <img class="rounded-xl lg:rounded-2xl shadow-md object-cover w-full h-1/2 mt-4"
-                    src="Images/collection-12.jpg" alt="Image 3">
-                <div
-                    class="absolute bottom-0 right-0 bg-white text-black rounded-br-xl lg:rounded-br-2xl rounded-tl-2xl  px-10 lg:px-16 py-2 lg:py-5 max-w-sm">
-                    <div>
-                        <span class="font-semibold lg:font-bold text-black">URBAN SNEAKERS 2024 <i
-                                class="fas fa-arrow-right ml-5"></i></span>
-                    </div>
-                    <div class="mt-5 lg:block hidden">
-                        <span class="py-2  text-gray-700 rounded-2xl mt-5">$10,000</span>
-                    </div>
-
-                </div>
+            <div class="mt-5 lg:block hidden">
+              <span class="py-2 text-gray-700 rounded-2xl mt-5">$10,000</span>
             </div>
+          </div>
+          <img
+            class="rounded-xl lg:rounded-2xl shadow-md object-cover w-full h-1/2 mt-4"
+            src="Images/collection-12.jpg"
+            alt="Image 3"
+          />
+          <div
+            class="absolute bottom-0 right-0 bg-white text-black rounded-br-xl lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm"
+          >
+            <div>
+              <span class="font-semibold lg:font-bold text-black"
+                >URBAN SNEAKERS 2024 <i class="fas fa-arrow-right ml-5"></i
+              ></span>
+            </div>
+            <div class="mt-5 lg:block hidden">
+              <span class="py-2 text-gray-700 rounded-2xl mt-5">$10,000</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- ------ Cloth Items ------ -->
 
-    <section class="relative mt-24 lg:mt-32">
-        <div class="flex justify-between mx-10">
-            <h1 class="font-bold text-base lg:text-lg">New Arrivals <i class="fas fa-arrow-solid fa-plus"></i></h1>
-            <button class="bg-black rounded-full text-white lg:px-10 px-5 lg:py-2 py-1 mb-10"> See All <i
-                    class="fas fa-arrow-right ml-2"></i> </button>
+    <section class="relative mt-24 lg:mt-32" id="categories">
+      <div class="flex justify-between mx-10">
+        <h1 class="font-bold text-base lg:text-lg">
+          New Arrivals <i class="fas fa-arrow-solid fa-plus"></i>
+        </h1>
+        <button
+          class="bg-black rounded-full text-white lg:px-10 px-5 lg:py-2 py-1 mb-10"
+        >
+          <a href="collections.html">See All</a>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+      <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:mx-10 mx-5 mt-5">
+        <div class="rounded-lg lg:rounded-2xl">
+          <img
+            src="Images/collection-1.webp"
+            loading="lazy"
+            class="rounded-md"
+          />
 
-        </div>
-        <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:mx-10 mx-5 mt-5">
-            <div class="rounded-lg lg:rounded-2xl">
-                <img src="Images/collection-1.webp" loading="lazy" class=" rounded-md">
-
-                <h2 class="font-bold mt-2">URBAN JACKET</h2>
-                <p class="text-gray-500 mb-5">VINTAGE GREEN JACKET</p>
-                <span>$50.00</span>
-
-            </div>
-
-            <div class="lg:mt-0 ">
-                <img src="Images/collection-2.webp" class="rounded-md lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">RETRO GLASSES</h2>
-                <p class="text-gray-500 mb-5">GREY RETRO GLASSES</p>
-                <span>$52.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-10.jpg" class="rounded-md lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
-                <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
-                <span>$99.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-4.webp" class="rounded-md  lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">NXT SPRTWEAR WINDRUNNER</h2>
-                <p class="text-gray-500 mb-5">MEN'S FULL ZIP HODDIE</p>
-                <span>$1009.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-5.webp" class="rounded-md  lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">BROWN MODERN BAG</h2>
-                <p class="text-gray-500 mb-5">MODERN LEATHER BAG FOR WOMEN</p>
-                <span>$255.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-6.webp" class="rounded-md lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">RELAXED FIT T-SHIRT</h2>
-                <p class="text-gray-500 mb-5">OGANIC COTTON JERSEY</p>
-                <span>$1.035.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-19.jpg" class="rounded-md lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
-                <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
-                <span>$99.99</span>
-
-            </div>
-
-            <div class="lg:mt-0 mt-10">
-                <img src="Images/collection-13.webp" class="rounded-md lg:rounded-xl">
-
-                <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
-                <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
-                <span>$99.99</span>
-
-            </div>
+          <h2 class="font-bold mt-2">URBAN JACKET</h2>
+          <p class="text-gray-500 mb-5">VINTAGE GREEN JACKET</p>
+          <span>$50.00</span>
         </div>
 
+        <div class="lg:mt-0">
+          <img
+            src="Images/collection-2.webp"
+            class="rounded-md lg:rounded-xl"
+          />
 
+          <h2 class="font-bold mt-2">RETRO GLASSES</h2>
+          <p class="text-gray-500 mb-5">GREY RETRO GLASSES</p>
+          <span>$52.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-10.jpg"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
+          <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
+          <span>$99.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-4.webp"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">NXT SPRTWEAR WINDRUNNER</h2>
+          <p class="text-gray-500 mb-5">MEN'S FULL ZIP HODDIE</p>
+          <span>$1009.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-5.webp"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">BROWN MODERN BAG</h2>
+          <p class="text-gray-500 mb-5">MODERN LEATHER BAG FOR WOMEN</p>
+          <span>$255.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-6.webp"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">RELAXED FIT T-SHIRT</h2>
+          <p class="text-gray-500 mb-5">OGANIC COTTON JERSEY</p>
+          <span>$1.035.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-19.jpg"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
+          <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
+          <span>$99.99</span>
+        </div>
+
+        <div class="lg:mt-0 mt-10">
+          <img
+            src="Images/collection-13.webp"
+            class="rounded-md lg:rounded-xl"
+          />
+
+          <h2 class="font-bold mt-2">NIKE SOLO SWOOSH</h2>
+          <p class="text-gray-500 mb-5">MEN'S FLEECH TROUSERS</p>
+          <span>$99.99</span>
+        </div>
+      </div>
     </section>
 
     <!-- ------ Unleash your fashion ------ -->
     <section class="mt-32 lg:mt-40">
-        <div class="ml-5 lg:ml-10">
-            <h1 class="bold lg:text-5xl text-3xl font-bold mb-5">UNLEASH YOUR FASHION FANTASY</h1>
-            <button class="bg-black rounded-full text-white lg:px-16 px-12 lg:py-3 py-2 mb-10">Explore More <i
-                    class="fas fa-arrow-right"></i> </button>
+      <div class="ml-5 lg:ml-10">
+        <h1 class="bold lg:text-5xl text-3xl font-bold mb-5">
+          UNLEASH YOUR FASHION FANTASY
+        </h1>
+        <button
+          class="bg-black rounded-full text-white lg:px-16 px-12 lg:py-3 py-2 mb-10"
+        >
+          Explore More <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="grid lg:grid-cols-2 lg:mx-10 mx-5 gap-5">
+        <div class="relative">
+          <img
+            src="Images/collection-15.jpg"
+            class="rounded-lg lg:rounded-2xl"
+          />
+          <div
+            class="absolute bottom-0 right-0 bg-white text-black rounded-br-md lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm"
+          >
+            <div>
+              <span class="font-bold">LONG SLEEVE T-SHIRT</span>
+            </div>
+            <div class="mt-5">
+              <span class="py-2 px-10 bg-black text-white rounded-2xl mt-5"
+                >$5,000 <i class="fas fa-arrow-right ml-2"></i
+              ></span>
+            </div>
+          </div>
         </div>
 
-        <div class="grid lg:grid-cols-2 lg:mx-10 mx-5 gap-5">
-            <div class="relative">
-                <img src="Images/collection-15.jpg" class="rounded-lg lg:rounded-2xl">
-                <div
-                    class="absolute bottom-0 right-0 bg-white text-black rounded-br-md lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm">
-                    <div>
-                        <span class="font-bold">LONG SLEEVE T-SHIRT</span>
-                    </div>
-                    <div class="mt-5">
-                        <span class="py-2 px-10 bg-black text-white rounded-2xl mt-5">$5,000 <i
-                                class="fas fa-arrow-right ml-2"></i></span>
-                    </div>
-
-                </div>
+        <div class="relative">
+          <img
+            src="Images/collection-15.jpg"
+            class="rounded-md lg:rounded-2xl"
+          />
+          <div
+            class="absolute bottom-0 right-0 bg-white text-black rounded-br-sm lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm"
+          >
+            <div>
+              <span class="font-bold">URBAN SNEAKERS 2024</span>
             </div>
-
-            <div class="relative">
-                <img src="Images/collection-15.jpg" class="rounded-md lg:rounded-2xl">
-                <div
-                    class="absolute bottom-0 right-0 bg-white text-black rounded-br-sm lg:rounded-br-2xl rounded-tl-2xl px-10 lg:px-16 py-2 lg:py-5 max-w-sm">
-                    <div>
-                        <span class="font-bold">URBAN SNEAKERS 2024</span>
-                    </div>
-                    <div class="mt-5">
-                        <span class="py-2 px-10 bg-black text-white rounded-2xl mt-5">$10,000 <i
-                                class="fas fa-arrow-right ml-2"></i></span>
-                    </div>
-
-                </div>
+            <div class="mt-5">
+              <span class="py-2 px-10 bg-black text-white rounded-2xl mt-5"
+                >$10,000 <i class="fas fa-arrow-right ml-2"></i
+              ></span>
             </div>
-
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- ----- Sponsors ------ -->
     <section class="">
-        <div class="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-
+      <div class="">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
     </section>
 
     <!-- ------ Crisp Look Newsleter ------ -->
-    <section class="bg-[url('Images/pexels-tony-schnagl-5588479.jpg')] bg-cover h-screen grayscale mt-40 hidden">
-
-        <div class="flex justify-center items-center ">
-            <div class="">
-                <h1 class="text-7xl font-extrabold mt-40 w-[90%] text-center text-white">Subscribe For Our Exclusive
-                    Fahion Insight</h1>
-                <input type="search" class=" border-gray-950">
-                <button class="bg-black px-12 py-2 text-white">Subscribe</button>
-            </div>
-
+    <section
+      class="bg-[url('Images/pexels-tony-schnagl-5588479.jpg')] bg-cover h-screen grayscale mt-40 hidden"
+    >
+      <div class="flex justify-center items-center">
+        <div class="">
+          <h1
+            class="text-7xl font-extrabold mt-40 w-[90%] text-center text-white"
+          >
+            Subscribe For Our Exclusive Fahion Insight
+          </h1>
+          <input type="search" class="border-gray-950" />
+          <button class="bg-black px-12 py-2 text-white">Subscribe</button>
         </div>
-
-
-
+      </div>
     </section>
 
     <!-- ------ Footer Section ------ -->
     <section class="mt-20 bg-black">
-        <div class="grid lg:grid-cols-5 grid-cols-2 lg:mx-40 mx-5 text-white">
-            <ul class="space-y-3 mt-14">
-                <li>Home</li>
-                <li>About</li>
-                <li>Cloths</li>
-                <li>See more</li>
-                <li>Social Handles</li>
-            </ul>
+      <div class="grid lg:grid-cols-5 grid-cols-2 lg:mx-40 mx-5 text-white">
+        <ul class="space-y-3 mt-14">
+          <li>Home</li>
+          <li>About</li>
+          <li>Cloths</li>
+          <li>See more</li>
+          <li>Social Handles</li>
+        </ul>
 
-            <ul class="mt-14 space-y-3">
-                <li>Home</li>
-                <li>About</li>
-                <li>Cloths</li>
-                <li>See more</li>
-                <li>Social Handles</li>
-            </ul>
+        <ul class="mt-14 space-y-3">
+          <li>Home</li>
+          <li>About</li>
+          <li>Cloths</li>
+          <li>See more</li>
+          <li>Social Handles</li>
+        </ul>
 
-            <ul class="mt-14 space-y-3">
-                <li>Home</li>
-                <li>About</li>
-                <li>Cloths</li>
-                <li>See more</li>
-                <li>Social Handles</li>
-            </ul>
+        <ul class="mt-14 space-y-3">
+          <li>Home</li>
+          <li>About</li>
+          <li>Cloths</li>
+          <li>See more</li>
+          <li>Social Handles</li>
+        </ul>
 
-            <ul class="mt-14">
-                <li>Home</li>
-                <li>About</li>
-                <li>Cloths</li>
-                <li>See more</li>
-                <li>Social Handles</li>
-            </ul>
+        <ul class="mt-14">
+          <li>Home</li>
+          <li>About</li>
+          <li>Cloths</li>
+          <li>See more</li>
+          <li>Social Handles</li>
+        </ul>
 
-            <ul class="flex space-x-4 mt-10 w-28">
-                <li><a href="#" class="text-white hover:text-gray-700"><i
-                            class="fab fa-facebook text-lg lg:text-2xl"></i></a></li>
-                <li><a href="#" class="text-white hover:text-gray-700"><i
-                            class="fab fa-twitter text-lg lg:text-2xl"></i></a></li>
-                <li><a href="#" class="text-white hover:text-gray-700"><i
-                            class="fab fa-instagram text-lg lg:text-2xl"></i></a></li>
-                <li><a href="#" class="text-white hover:text-gray-700"><i
-                            class="fab fa-linkedin text-lg lg:text-2xl"></i></a></li>
-                <!-- Add more social media icons as needed -->
-            </ul>
-        </div>
-
+        <ul class="flex space-x-4 mt-10 w-28">
+          <li>
+            <a href="#" class="text-white hover:text-gray-700"
+              ><i class="fab fa-facebook text-lg lg:text-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-700"
+              ><i class="fab fa-twitter text-lg lg:text-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-700"
+              ><i class="fab fa-instagram text-lg lg:text-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-gray-700"
+              ><i class="fab fa-linkedin text-lg lg:text-2xl"></i
+            ></a>
+          </li>
+          <!-- Add more social media icons as needed -->
+        </ul>
+      </div>
     </section>
 
-
     <script src="JS/main.js"></script>
-</body>
-
+  </body>
 </html>
