@@ -14,7 +14,11 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="relative">
+    <!-- Background -->
+    <div
+        class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+    </div>
 
     <section>
         <!-- ------ Hero Section ------ -->
@@ -102,9 +106,7 @@
             <h1 class="font-semibold text-2xl lg:text-5xl max-w-xl lg:leading-tight leading-10 mb-10"> Shop by Categoies</h1>
         </div>
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 lg:mx-10 mx-5 mt-5">
-            <div
-                class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-            </div>
+          
             <div class="rounded-lg lg:rounded-2xl">
                 <img src="Images/collection-1.webp" loading="lazy" class=" rounded-md">
 
@@ -180,6 +182,56 @@
 
     </section>
 
+
+    <!-- ------ Footer Section ------ -->
+    <section class="mt-20 bg-black">
+        <div class="grid lg:grid-cols-5 grid-cols-2 lg:mx-40 mx-5 text-white">
+            <ul class="space-y-3 mt-14">
+                <li>Home</li>
+                <li>About</li>
+                <li>Cloths</li>
+                <li>See more</li>
+                <li>Social Handles</li>
+            </ul>
+
+            <ul class="mt-14 space-y-3">
+                <li>Home</li>
+                <li>About</li>
+                <li>Cloths</li>
+                <li>See more</li>
+                <li>Social Handles</li>
+            </ul>
+
+            <ul class="mt-14 space-y-3">
+                <li>Home</li>
+                <li>About</li>
+                <li>Cloths</li>
+                <li>See more</li>
+                <li>Social Handles</li>
+            </ul>
+
+            <ul class="mt-14">
+                <li>Home</li>
+                <li>About</li>
+                <li>Cloths</li>
+                <li>See more</li>
+                <li>Social Handles</li>
+            </ul>
+
+            <ul class="flex space-x-4 mt-10 w-28">
+                <li><a href="#" class="text-white hover:text-gray-700"><i
+                            class="fab fa-facebook text-lg lg:text-2xl"></i></a></li>
+                <li><a href="#" class="text-white hover:text-gray-700"><i
+                            class="fab fa-twitter text-lg lg:text-2xl"></i></a></li>
+                <li><a href="#" class="text-white hover:text-gray-700"><i
+                            class="fab fa-instagram text-lg lg:text-2xl"></i></a></li>
+                <li><a href="#" class="text-white hover:text-gray-700"><i
+                            class="fab fa-linkedin text-lg lg:text-2xl"></i></a></li>
+                <!-- Add more social media icons as needed -->
+            </ul>
+        </div>
+
+    </section>
 
 <script src="JS/main.js"></script>
 
