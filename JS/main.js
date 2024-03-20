@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
       price: "$11,000",
     },
 
-
     {
       src: "Images/collection-2.webp",
       title: "URBAN MEN ANKARA",
@@ -81,9 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "VINTAGE ANKARA STYLES",
       price: "$19,000",
     },
-
-    
   ];
 
-
+  
 });
