@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     nav_hidden.classList.toggle("nav_hidden");
   });
 
+  
+
   // ------ Cloth List Items -------
   const orderList = [
     {
