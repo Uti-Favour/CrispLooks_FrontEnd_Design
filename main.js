@@ -117,16 +117,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  slidesPerView: 1, // Number of slides visible at once
-  spaceBetween: 30, // Space between slides (in pixels)
-  loop: true, // Loop back to the first slide after the last one
-  pagination: {
-    el: '.swiper-pagination', // Selector for pagination element
-  },
-  navigation: {
-    nextEl: '.swiper-button-next', // Selector for next button
-    prevEl: '.swiper-button-prev', // Selector for prev button
-  },
-});
